@@ -5,34 +5,43 @@
     <title>Clock</title>
 </head>
 <body>
-<div class="header">
+<header class="header">
     <div class="header_logo">
-        <img src="./img/Ellipse.svg" width="" height="" alt="Логотип сайта">
-        <a>CONQUEST</a>
+        <a href="#">
+            <img src="./img/logo.svg" width="" height="" alt="Логотип сайта">
+        </a>
     </div>
     <div class="icons_header">
-        <img src="./img/search.svg" alt="Поиск">
-        <img src="./img/favourite.svg" alt="Избранное">
-        <img src="./img/basket.svg" alt="Корзина">
+        <button class="btn_search">
+            <img src="./img/search.svg" width="16" height="16" alt="Поиск">
+        </button>
+        <button>
+            <img src="./img/favourite.svg" width="19" height="16" alt="Избранное">
+        </button>
+        <button>
+            <img src="./img/basket.svg" width="18" height="16" alt="Корзина">
+        </button>
     </div>
-    <div>
+    <div class="wrapper_nav">
         <nav class="header_container">
-            <ul>Каталог</ul>
-            <ul>Акции</ul>
-            <ul>Доставка</ul>
-            <ul>Контакты</ul>
+            <ul>
+                <li>Каталог</li>
+                <li>Акции</li>
+                <li>Доставка</li>
+                <li>Контакты</li>
+            </ul>
         </nav>
     </div>
-</div>
+</header>
 <main>
     <div class="pages">
-            <span>
-            Главная > Каталог > <strong>Мужские часы</strong>
-            </span>>
         <span>
-                Сортировать по: <strong>популярности</strong> <img src="./img/Vector 2.3.svg">
-            </span>
-
+            Главная <img src="./img/Vector 2.1.svg"> Каталог <img src="./img/Vector 2.1.svg"> Мужские часы
+        </span>
+        <span>
+            Сортировать по: популярности <img src="./img/Vector 2.3.svg">
+        </span>
+<!--    Убрать strong и поменять '>'на svg-->
         <h1>Мужские часы</h1>
     </div>
     <div class="price">
@@ -42,47 +51,46 @@
             </span>
             <img src="./img/Vector.svg">
         </div>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider"
-                   id="myRange">
-        </div>
+<!--        <div class="slidecontainer">-->
+<!--            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">-->
+<!--        </div>-->
     </div>
-    <aside>
+    <aside class="helping_filter">
         <div class="brend">
             <span>
                 Бренд
             </span>
-            <img src="./img/Vector.svg">
+            <img src="./img/Vector.svg" alt="#">
         </div>
         <div class="checkbox">
             <form action="#">
                 <label>
-                    <input type="checkbox" name="languages" value="HTML">
+                    <input type="checkbox" name="watch" value="Techne">
                     Techne
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" name="languages" value="CSS">
+                    <input type="checkbox" name="watch" value="Rado">
                     Rado
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" name="languages" value="JS">
+                    <input type="checkbox" name="watch" value="Bvlgari">
                     Bvlgari
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" name="languages" value="JS">
+                    <input type="checkbox" name="watch" value="Tissot">
                     Tissot
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" name="languages" value="JS">
+                    <input type="checkbox" name="watch" value="Omega">
                     Omega
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" name="languages" value="JS">
+                    <input type="checkbox" name="watch" value="Montblanc">
                     Montblanc
                 </label>
             </form>
@@ -91,15 +99,21 @@
             <span>
                 Механизм
             </span>
-            <img src="./img/vre.svg">
+            <button>
+                <img src="./img/+.svg">
+            </button>
             <span>
                 Материал
             </span>
-            <img src="./img/vre.svg">
+            <button>
+                <img src="./img/+.svg">
+            </button>
             <span>
                 Цвет
             </span>
-            <img src="./img/vre.svg">
+            <button>
+                <img src="./img/+.svg">
+            </button>
         </div>
         <div class="button_1">
             <button>
@@ -109,193 +123,184 @@
             </button>
         </div>
     </aside>
-    <section>
-        <div class="clock_page_1">
-                <span>
-                    <strong>TECHNE</strong>
-                </span>
-            <img src="./img/watch_1.svg" width="252" height="300" alt="page_1">
-            <p>
+    <section class="watches">
+        <div class="card_1">
+            <span class="article_name">
+                TECHNE
+            </span>
+            <span class="price_watch_1">
                 12 700 ₽
-            </p>
+            </span>
+            <img src="./img/watch_1.svg" class="card_img_watch_1" width="252" height="300" alt="page_1">
         </div>
-        <div class="clock_page_2">
-                <span>
-                    <strong>TECHNE</strong>
-                </span>
-            <img src="./img/watch_2.svg" alt="page_2">
-            <p>
+        <div class="card_2">
+            <span>
+                TECHNE
+            </span>
+            <span class="price_watch_2">
                 12 700 ₽
-            </p>
+            </span>
+            <img src="./img/watch_2.svg" class="card_img_watch_2" width="252" height="300" alt="page_2">
         </div>
-        <div class="clock_page_3">
-                <span>
-                    <strong>TECHNE</strong>
-                </span>
-            <img src="./img/watch_3.svg" alt="page_3">
-            <p>
+        <div class="card_3">
+            <span>
+                TECHNE
+            </span>
+            <span class="price_watch_3">
                 15 700 ₽
-            </p>
+            </span>
+            <img src="./img/watch_3.svg" class="card_img_watch_3" width="252" height="300" alt="page_3">
         </div>
-        <div class="clock_page_4">
-                <span>
-                    <strong>TECHNE</strong>
-                </span>
-            <img src="./img/watch_4.svg" alt="page_4">
-            <p>
+        <div class="card_4">
+            <span>
+                TECHNE
+            </span>
+            <span class="price_watch_4">
                 15 700 ₽
-            </p>
+            </span>
+            <img src="./img/watch_4.svg" class="card_img_watch_4" width="252" height="300" alt="page_4">
         </div>
-        <div class="clock_page_5">
-                <span>
-                    <strong>TECHNE</strong>
-                </span>
-            <img src="./img/watch_5.svg" alt="page_5">
-            <p>
+        <div class="card_5">
+            <span>
+                TECHNE
+            </span>
+            <span class="price_watch_5">
                 12 700 ₽
-            </p>
+            </span>
+            <img src="./img/watch_5.svg" class="card_img_watch_5" width="252" height="300" alt="page_5">
         </div>
-        <div>
-            <img src="./img/fone.png" alt="Скидка">
+        <div class="card_6">
+            <img src="./img/fone.png" class="card_img_watch_6" width="250" height="300" alt="Скидка">
         </div>
-        <div class="clock_page_7">
-                <span>
-                    <strong>BVLGARI</strong>
-                </span>
-            <img src="./img/watch_9.svg" alt="page_7">
-            <p>
+        <div class="card_7">
+            <span>
+                BVLGARI
+            </span>
+            <span class="price_watch_7">
                 72 700 ₽
-            </p>
+            </span>
+            <img src="./img/watch_9.svg" class="card_img_watch_7" width="252" height="300" alt="page_7">
         </div>
-        <div class="clock_page_8">
-                <span>
-                    <strong>TECHNE</strong>
-                </span>
-            <img src="./img/watches_10.svg" alt="page_8">
-            <p>
+        <div class="card_8">
+            <span>
+                TECHNE
+            </span>
+            <span class="price_watch_8">
                 22 700 ₽
-            </p>
+            </span>
+            <img src="./img/watches_10.svg" class="card_img_watch_8" width="252" height="300" alt="page_8">
         </div>
-        <div class="clock_page_9">
-                <span>
-                    <strong>RADO</strong>
-                </span>
-            <img src="./img/watch_11.svg" alt="page_9">
-            <p>
+        <div class="card_9">
+            <span>
+                RADO
+            </span>
+            <span class="price_watch_9">
                 22 000 ₽
-            </p>
+            </span>
+            <img src="./img/watch_11.svg" class="card_img_watch_9" width="252" height="300" alt="page_9">
         </div>
     </section>
-    <div class="pre_footer">
+    <section class="pre_footer">
         <div class="see_all">
                 <span>
-                    <strong>
-                        Ремешки
-                    </strong>
+                    Ремешки
                 </span>
             <span class="views_all">
-                    <strong>
-                        Смотреть все
-                    </strong>
-                <img src="./img/Line.svg">
+                Смотреть все
             </span>
-            <div>
-                <div>
-                    <svg></svg>
+            <div class="pagination_page">
+                <div class="pagination">
                     <div>
+                    <img src="./img/Vector 2.svg">
                         <span>1</span>
                         <span>2</span>
                         <span>3</span>
                         <span>...</span>
                         <span>12</span>
+                    <img src="./img/Vector 2.2.svg">
                     </div>
-                    <svg></svg>
                 </div>
             </div>
         </div>
-        <div class="pre_footer_container">
-            <div>
-                    <span>
-                        <strong>
-                            GEORG JENSEN
-                        </strong>
-                    </span>
-                <p>
+        <div class="belt_">
+            <div class="belt_image_1">
+                <span>
+                    GEORG JENSEN
+                </span>
+                <span class="belt_price_1">
                     6 500 ₽
-                </p>
-                <img src="./img/band_1.svg" alt="page_1">
+                </span>
+                <img src="./img/band_1.svg" width="360" height="374" alt="page_1">
             </div>
-            <div>
-                    <span>
-                        <strong>
-                            NATO
-                        </strong>
-                    </span>
-                <p>
+            <div class="belt_image_2">
+                <span>
+                    NATO
+                </span>
+                <span class="belt_price_2">
                     3 200 ₽
-                </p>
-                <img src="./img/band_2.svg" alt="page_2">
+                </span>
+                <img src="./img/band_2.svg" width="360" height="374" alt="page_2">
             </div>
-            <div>
-                    <span>
-                        <strong>
-                            SPARK
-                        </strong>
-                    </span>
-                <p>
+            <div class="belt_image_3">
+                <span>
+                    SPARK
+                </span>
+                <span class="belt_price_3">
                     5 400 ₽
-                </p>
-                <img src="./img/band_3.svg" alt="page_3">
+                </span>
+                <img src="./img/band_3.svg" width="360" height="374" alt="page_3">
             </div>
         </div>
-    </div>
+    </section>
 </main>
-<footer>
-    <div class="background_footer_one">
-        <p>
-            <a>
+<footer class="footer">
+    <div class="background_footer">
+        <div class="general_info">
+            <img src="./img/logo.svg" class="footer_logo">
+            <a href="tel: 8 (499) 450-47-97">8 (499) 450-47-97</a>
+            <span class="e_mail">
+                info@conquest.watch.ru
+            </span>
+        </div>
+        <div class="about_company">
+            <span>
                 О КОМПАНИИ
-            </a>>
-        </p>
-        <nav class="about_company">
-            <ul>
-                <li>Наши магазины</li>
-                <li>Вакансии</li>
-                <li>Сертификаты</li>
-                <li>Отзывы</li>
-            </ul>
-        </nav>
-    </div>
-    <div class="background_footer_two">
-        <p>
-            <a>
+            </span>
+            <nav class="about_us">
+                <ul>
+                    <li><a href="#">Наши магазины</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Сертификаты</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="buyers">
+            <span>
                 ПОКУПАТЕЛЯМ
-            </a>>
-        </p>
-        <nav class="client">
-            <ul>
-                <li>Каталог товаров</li>
-                <li>Как заказать?</li>
-                <li>FAQ</li>
-                <li>Корпоративные клиентам</li>
-            </ul>
-
-        </nav>
-    </div>
-    <div class="background_footer_third">
-        <p>
-            <a>
+            </span>
+            <nav class="possibilities">
+                <ul>
+                    <li><a href="#">Каталог товаров</a></li>
+                    <li><a href="#">Как заказать?</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Корпоративные клиентам</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="services">
+            <span>
                 ОПЛАТА И ДОСТАВКА
-            </a>>
-        </p>
-        <nav class="client">
-            <ul>
-                <li>Способы оплаты</li>
-                <li>Время доставки</li>
-                <li>Гарантии и ремонт</li>
-                <li>Возврат и компенсация</li>
-            </ul>
-        </nav>
+            </span>
+            <nav class="nav_services">
+                <ul>
+                    <li><a href="#">Способы оплаты</a></li>
+                    <li><a href="#">Время доставки</a></li>
+                    <li><a href="#">Гарантии и ремонт</a></li>
+                    <li><a href="#">Возврат и компенсация</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </footer>
 </body>
