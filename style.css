@@ -1,0 +1,101 @@
+/* header */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    background-color:white;
+    max-width: 100%;
+    position:sticky;
+    top:0;
+    z-index:99999;
+    border-bottom: 1px solid grey;
+    margin: 0 0 57px 0;
+}
+.wrapper-header{
+    max-width: 1160px;
+    display: flex;
+    margin: 0 auto;
+    align-items:center;
+    justify-content: space-between;
+}
+.header-list{
+    display:flex;
+    justify-content: space-between;
+    list-style-type:none;
+}
+.link-header-nav{
+    margin: 0 65px 0 0;
+}
+.link-header-nav:hover{
+    color: #A69876;
+}
+.link-header-nav:last-child{
+    margin: 0 0 0 0;
+}
+button{
+    border: none; 
+    outline: none;
+    background-color: transparent;
+}
+
+/* header */
+
+/* main */
+
+.wrapper-main{
+    margin: 0 auto;
+    max-width: 1160px;
+}
+.tab{
+    color:#B3B3B3;
+    margin:0 14px 0 14px;
+}
+.tab:last-child{
+    color: black;
+}
+.tab:first-child{
+    margin:0 14px 0 0;
+}
+.wrapper-naming-sort{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sort{
+    color:#B3B3B3;
+}
+.wrapper-aside-watches{
+    display: flex;
+    justify-content: space-between;
+}
+.helping_filter{
+    width: 230px;
+    margin:0 94px 0 0;
+}
+.watches{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 836px;
+    margin:0 0 0 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    max-width: 252px;
+    margin: 0 40px 0 0;
+}
+.card:last-child{
+    margin: 0 0 0 0;
+}
+
+/* main */
+
+
+
+
+
