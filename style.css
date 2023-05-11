@@ -34,10 +34,16 @@ a{
 .link-header-nav:last-child{
     margin: 0 0 0 0;
 }
-button{
+.icons_header > button{
+    margin: auto auto;
     border: none; 
-    outline: none;
     background-color: transparent;
+    height: 18px;;
+}
+.icons_header > button:hover{
+    background-color:#A69876;
+    border-radius:5px;
+    transition: background-color 0.5s ease;
 }
 
 /* header */
@@ -87,13 +93,108 @@ button{
 }
 .card{
     max-width: 252px;
-    margin: 0 40px 0 0;
+    box-sizing: border-box;
+    padding: 20px 0 0 20px;
+    border:solid 1px;
+}   
+.card img{
+    max-width: 100%;
 }
-.card:last-child{
+.link-card{
+    margin: 0 40px 40px 0;
+}
+.link-card:last-child{
+    margin:0 0 40px 0;
+}
+.card_img_watch_6{
+    max-width: 100%;
+}
+#banner{
+    padding:0;
+    height: 100%;
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+.pre_footer{
+    margin: 57px auto 80px;
+    max-width: 1160px;    
+}
+.belt_{
+    display: flex;
+}
+.belt_ a{
+    margin:0 40px 0 0;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 360px
+}
+.belt_ a:last-child{
     margin: 0 0 0 0;
 }
 
-/* main */
+.see_all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.call-belt{
+    font-size: 32px;
+    font-family: 'Playfair Display';
+    margin:0 0 37.5px 0;
+}
+.views_all{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 0 12.5px 0;
+    border-bottom: 1px solid #C4C0B6;
+    margin:0 0 37.5px 0;
+}
+.name-belt{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+}
+.belt_price{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* main end */
+
+/* footer start */
+
+footer{
+    background-color: #444240;
+    color:white
+}
+.footer_logo{
+    margin: 0 0 7px 0;
+}
+.background_footer{
+    margin: 0 auto;
+    max-width: 1160px;
+    display:flex;
+    justify-content: space-between;
+    padding: 67px 0 0 0;
+}
+.about_company, .buyers, .services{
+    padding: 12px 0 0 0;
+}
+footer a{
+    color:white;
+}
+footer ul{
+    list-style: none;
+    vertical-align: middle;
+    padding: 0;
+}
+footer a:hover{
+    color:#C4C0B6 ;
+}
+/* footer end */
 
 
 
